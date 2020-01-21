@@ -46,7 +46,7 @@ spec:
     - key: "taintdemo"
       operator: "Equal"
       value: "true"
-        effect: "NoSchedule"
+      effect: "NoSchedule"
 
   replicas: 4
   selector: 
