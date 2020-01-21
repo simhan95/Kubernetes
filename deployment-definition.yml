@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: nginx-deploy
+  labels: 
+    name: rs-label
+    type: back-end
+spec: 
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: #update pods
+      maxUnavailable: 1 
+  template:
+    metadata:
+      name: nginx
+      labels:
+        name: rs-label
+        type: back-end
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/e2e-az-name
+            operator: In
+            values:
+            - e2e-az1
+            - e2e-az2
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 1
+        preference:
+          matchExpressions:
+          - key: another-node-label-key
+            operator: In
+            values:
+            - another-node-label-value
+ 
+    containers:
+     - name: genesys
+       image: yogeshraheja/yogeshk8stest
+    nodeSelector:
+       type: back-end
+       tier: front-end
+
+    tolerations:
+    - key: "taintdemo"
+      operator: "Equal"
+      value: "true"
+        effect: "NoSchedule"
+
+  replicas: 4
+  selector: 
+    matchLabels: 
+      name: rs-label
+      type: back-end
+
