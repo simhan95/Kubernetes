@@ -1,0 +1,31 @@
+apiVersion: v1
+entries:
+  mychart:
+  - apiVersion: v1
+    appVersion: 0.1.3
+    created: 2020-01-23T12:07:50.459803301Z
+    description: A Helm chart for Kubernetes
+    digest: ea9711234e766aec55aa9e2bf3f3291bc4edd06a86575c1e0ef3d1a546a937eb
+    name: mychart
+    urls:
+    - https://simhan95.github.io/Kubernetes/mychart-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2020-01-23T12:07:50.45948866Z
+    description: A Helm chart for Kubernetes
+    digest: fd07b9d36562c0e724130c41f77d2e1be747a7dbe7f855da96ad364e1220b007
+    name: mychart
+    urls:
+    - https://simhan95.github.io/Kubernetes/mychart-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2020-01-23T12:07:50.459143744Z
+    description: A Helm chart for Kubernetes
+    digest: 6c00f889b6e035306bf92281e0af494906577bd5f0c71030dfe9db3d40c1fc6d
+    name: mychart
+    urls:
+    - https://simhan95.github.io/Kubernetes/mychart-0.1.0.tgz
+    version: 0.1.0
+generated: 2020-01-23T12:07:50.45861174Z
