@@ -1,0 +1,22 @@
+@04:31:07.9867 [0] 8.1.103.62 distribute_event: message EventDNOutOfService
+	AttributeEventSequenceNumber	000000002087a5fb
+	AttributeTimeinuSecs	986727
+	AttributeTimeinSecs	1578976267 (04:31:07)
+	AttributeThisDN	'Tenant_VodafoneAUModel_PSTN_Trunk_syd'
+	
+	
+04:31:10.931: CallUUID: 024VQ7NSHOEOH6B2V084I2LAES06TGQ3 
+ 
+@04:31:10.9328 [0] 8.1.103.62 distribute_event: message EventDNBackInService
+	AttributeEventSequenceNumber	000000002087a870
+	AttributeTimeinuSecs	932829
+	AttributeTimeinSecs	1578976270 (04:31:10)
+	AttributeThisDN	'Tenant_VodafoneAUModel_PSTN_Trunk_syd'
+	
+04:31:34.184: CallUUID: 024VQ7NSHOEOH6B2V084I2LAES06TGS7 
+	
+@04:31:43.9921 [0] 8.1.103.62 distribute_event: message EventDNOutOfService
+	AttributeEventSequenceNumber	000000002087c58b
+	AttributeTimeinuSecs	992180
+	AttributeTimeinSecs	1578976303 (04:31:43)
+	AttributeThisDN	'Tenant_VodafoneAUModel_PSTN_Trunk_syd'
